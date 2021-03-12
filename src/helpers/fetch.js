@@ -2,6 +2,8 @@ const baseUrl = process.env.REACT_APP_API_URL;
 
 const fetchSinToken = ( endpoint, data, method= 'GET') =>{
     const url= `${ baseUrl}/${ endpoint }` //http://localhost:4000/api
+
+    //console.log(url);
     if (method ==='GET'){
 
         return fetch( url );
